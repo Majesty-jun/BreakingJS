@@ -11,6 +11,27 @@ img.forEach((element, index) => {
     lightBox.style.display = "block";
     lightImg.src = img[index].src;
     imgNumber.innerText = `Index ${index + 1} of ${img.length}`;
+    
+    nextBtn.addEventListener('click', () => {
+      index++;
+      lightImg.src = img[index].src;
+      imgNumber.innerText = `Index ${index + 1} of ${img.length}`;
+      if(index === img.length -1) nextBtn.style.display = "none";
+      else nextBtn.style.display = 'block';
+      if (index === 0) prevBtn.style.display = "none";
+      else prevBtn.style.display = "block";
+    })
+
+    prevBtn.addEventListener('click', () => {
+      index--;
+      lightImg.src = img[index].src;
+      imgNumber.innerText = `Index ${index + 1} of ${img.length}`;
+      if (index === 0) prevBtn.style.display = "none";
+      else prevBtn.style.display = "block";
+      if(index === img.length -1) nextBtn.style.display = "none";
+      else nextBtn.style.display = 'block';
+    })
+
   })
 })
 
