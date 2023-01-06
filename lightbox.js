@@ -13,3 +13,7 @@ img.forEach((element, index) => {
     imgNumber.innerText = `Index ${index + 1} of ${img.length}`;
   })
 })
+
+closeBtn.addEventListener('click', () => {
+  lightBox.style.display = "none";
+})
