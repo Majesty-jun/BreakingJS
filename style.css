@@ -6,58 +6,60 @@
 
 body {
   background-color: #14213d;
-}
-
-button {
-  margin: 0;
   padding: 0;
-  border: 0;
+  width: 100%;
 }
 
-.slider{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 1220px;
-  max-height: 266px;
+ul {
+  list-style-type: none;
 }
 
-
-.slider .slider-wrapper{
+.slider-container {
+  height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  flex-flow: row nowrap;
+  justify-content: center;
   align-items: center;
+}
+
+.slider {
+  width: 1220px;
+  overflow: hidden;
+}
+
+.slider-item-wrapper {
+  display: flex;
   gap: 10px;
-  overflow: auto;
 }
 
-.slider-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.slider .slider-wrapper img{
+.image {
   width: 400px;
-  height: 266px;
+  height: 100%;
+}
+
+.button-wrapper {
+  width: 1220px;
+  position: absolute;
 }
 
 .move {
-  color: white;
-  background: #000;
-  font-size: 25px;
-  width: 40px;
-  height: 40px;
+  padding: 10px 20px;
   border-radius: 50%;
+  border: 0;
+  color: #000;
+  background-color: #fca311;
+  font-size: 2rem;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
 }
 
 .prev-button {
-  transform: translateX(-50%);
+  left: 0;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 
 .next-button {
   right: 0;
-  transform: translateX(50%);
+  transform: translate(50%, -50%);
 }
