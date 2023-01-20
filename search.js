@@ -47,4 +47,11 @@ function searchInputHandler(e) {
   renderSuggestion();
 }
 
-searchBar.addEventListener('input', searchInputHandler); 
+function searchButtonHandler(e) {
+  e.preventDefault();
+  open(`https://google.com/search?q=${searchInput}`);
+  localStorage.setItem()
+}
+
+searchBar.addEventListener('input', searchInputHandler);
+searchButton.addEventListener('click', searchButtonHandler);
