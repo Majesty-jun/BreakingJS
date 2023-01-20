@@ -47,6 +47,14 @@ function searchInputHandler(e) {
   renderSuggestion();
 }
 
+function suggestionHandler(e) {
+  const selectedSuggestion = e.target.textContent
+  searchInput = selectedSuggestion;
+  searchBar.value = selectedSuggestion;
+  suggestion.innerHTML = '';
+  styleBorderRadius(searchBar, '5px');
+}
+
 function searchButtonHandler(e) {
   e.preventDefault();
   open(`https://google.com/search?q=${searchInput}`);
@@ -55,3 +63,4 @@ function searchButtonHandler(e) {
 
 searchBar.addEventListener('input', searchInputHandler);
 searchButton.addEventListener('click', searchButtonHandler);
+suggestion.addEventListener('click', suggestionHandler); 
