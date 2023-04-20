@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lightbox</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="lightbox.js" defer></script>
+</head>
+<body>
+  <h1 class="sr-only">Lightbox Practice</h1>
+  <main>
+    <ul class="container">
+      <li><img class="itemImg" src="./src/cozy.jpg" alt="" /></li>
+      <li><img class="itemImg" src="./src/flight.jpg" alt="" /></li>
+      <li><img class="itemImg" src="./src/desk.jpg" alt="" /></li>
+      <li><img class="itemImg" src="./src/naiagara.jpg" alt="" /></li>
+      <li><img class="itemImg" src="./src/mic.jpg" alt="" /></li>
+      <li><img class="itemImg" src="./src/camping.jpg" alt="" /></li>
+    </ul>
+    <div class="lightBox">
+      <span class="imgNumber"></span>
+      <img class="lightImg" src="./src/cozy.jpg" alt="" />
+      <button class="previous">&#10092;</button>
+      <button class="next">&#10093;</button>
+      <button class="close">&#10005;</button>
+    </div>
+  </main>
+</body>
+</html>
