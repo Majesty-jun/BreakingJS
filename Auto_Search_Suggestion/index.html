@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/0b7fa1b4ba.js" crossorigin="anonymous"></script>
+  <script src="./search.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+    <form class="searchForm" action="">
+      <label for="searchbar" class="sr-only">search</label>
+      <input type="text" id="searchbar" class="searchbar" autocomplete="off" placeholder="Type to search.." />
+      <button type="submit" class="searchButton">
+        <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+      </button>
+      <div class="suggestion"></div>
+    </form>
+  </main>
+</body>
+
+</html>
